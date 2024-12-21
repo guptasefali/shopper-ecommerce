@@ -27,7 +27,7 @@ export default function CustomerEditProfile() {
     axios.get(CUSTOMER + _id)
       .then((response) => {
         console.log(response.data)
-        var custobj = response.data.customer_record
+        var custobj = response.data.record
         setname(custobj.name)
         setemail(custobj.email)
         setmobile(custobj.mobile)
